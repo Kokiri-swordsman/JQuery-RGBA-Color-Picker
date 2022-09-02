@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="colorpicker/colorpicker.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="colorpicker/colorpicker.js"></script>
+		<style>
+#colorPalette {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+
+#coloredText{
+	font-weight: bold;
+}
+		</style>
+	</head>
+	<body>
+		<span id="coloredText">You can change the color of this text by clicking the box</span>
+		<div id="colorPalette">
+			<div id="colorSelector">
+				<div style="background-color: #000000ff"></div>
+			</div>
+		</div>
+
+	</body>
+
+      <script type="text/javascript">
+$('#colorSelector').ColorPicker({
+	color: '#000000ff',
+	onShow: function(colpkr) {
+		$(colpkr).fadeIn(0);
+		return false;
+	},
+	onHide: function(colpkr) {
+		$(colpkr).fadeOut(0);
+		return false;
+	},
+	onChange: function(hsb, hex, rgb) {
+		$('#colorSelector div').css('backgroundColor', '#' + hex);
+		$('#coloredText').css('color', '#' + hex);
+	}
+});
+      </script>
+</html>

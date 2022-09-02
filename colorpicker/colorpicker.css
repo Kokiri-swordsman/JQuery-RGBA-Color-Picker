@@ -1,0 +1,241 @@
+#colorSelector {
+  width: 100%;
+  height: 100%;
+}
+
+#colorSelector div {
+  width: 100%;
+  height: 100%;
+}
+
+.palette {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.palette div {
+  float: left;
+  margin: 0px;
+  width: 48px;
+  height: 48px;
+}
+
+.colorpicker {
+  width: 385px;/*356px*/
+  height: 219px;/*176px*/
+  overflow: hidden;
+  position: absolute;
+  background: url(images/colorpicker_background.png);
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+.colorpicker_color {
+  width: 150px;
+  height: 150px;
+  left: 14px;
+  top: 13px;
+  position: absolute;
+  background: #f00;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.colorpicker_color div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: url(images/colorpicker_overlay.png);
+}
+
+.colorpicker_color div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  background: url(images/colorpicker_select.gif);
+  margin: -5px 0 0 -5px;
+}
+
+.colorpicker_hue {
+  position: absolute;
+  top: 13px;
+  left: 171px;
+  width: 35px;
+  height: 150px;
+  cursor: n-resize;
+}
+
+.colorpicker_hue div {
+  position: absolute;
+  width: 35px;
+  height: 9px;
+  overflow: hidden;
+  background: url(images/colorpicker_hue_thumb.gif) left top;
+  margin: -4px 0 0 0;
+  left: 0px;
+}
+
+.colorpicker_alpha {
+  position: absolute;
+  top: 171px;
+  left: 14px;
+  width: 150px;
+  height: 35px;
+  cursor: e-resize;
+}
+
+.colorpicker_alpha div {
+  position: absolute;
+  width: 9px;
+  height: 35px;
+  overflow: hidden;
+  background: url(images/colorpicker_alpha_thumb.gif) left top;
+  margin: 0 0 0 -4px;
+  top: -1px;
+}
+
+.colorpicker_new_color {
+  position: absolute;
+  width: 69px;/*60px*/
+  height: 69px;/*30px*/
+  left: 213px;
+  top: 13px;
+  background: #f00;
+}
+
+.colorpicker_current_color {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  left: 293px;
+  top: 13px;
+  background: #f00;
+}
+
+.colorpicker input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  font-size: 11px;
+  font-family: Consolas,monaco,monospace;
+  font-weight: bold;
+  color: #898989;
+  top: 4px;
+  right: 11px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 11px;
+}
+
+.colorpicker_field {
+  height: 22px;
+  width: 72px;
+  background-position: top;
+  position: absolute;
+}
+
+.colorpicker_field input {
+  right: 13px;
+  font-size: 11px;
+  color: #bcbbbb;
+}
+
+.colorpicker_field span {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  cursor: n-resize;
+}
+
+.colorpicker_rgb_r {
+  background-image: url(images/colorpicker_r.png);
+  top: 90px;
+  left: 212px;
+}
+
+.colorpicker_rgb_g {
+  background-image: url(images/colorpicker_g.png);
+  top: 120px;
+  left: 212px;
+}
+
+.colorpicker_rgb_b {
+  background-image: url(images/colorpicker_b.png);
+  top: 150px;
+  left: 212px;
+}
+
+.colorpicker_rgb_a {
+  background-image: url(images/colorpicker_a.png);
+  top: 180px;
+  left: 212px;
+}
+
+.colorpicker_hsb_h {
+  background-image: url(images/colorpicker_h.png);
+  top: 90px;
+  left: 292px;
+}
+
+.colorpicker_hsb_s {
+  background-image: url(images/colorpicker_s.png);
+  top: 120px;
+  left: 292px;
+}
+
+.colorpicker_hsb_b {
+  background-image: url(images/colorpicker_v.png);
+  top: 150px;
+  left: 292px;
+}
+
+.colorpicker_hex {
+  position: absolute;
+  width: 72px;
+  height: 22px;
+  background: url(images/colorpicker_hex.png) top;
+  top: 180px;
+  left: 292px;
+}
+
+.colorpicker_hex input {
+  right: 4px;
+  font-size: 11px;
+  color: #bcbbbb;
+}
+
+.colorpicker_submit {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url(images/colorpicker_submit.png) top;
+  top: 177px;
+  left: 177px;
+  overflow: hidden;
+}
+
+.colorpicker_focus {
+  background-position: center;
+}
+
+.colorpicker_hex.colorpicker_focus {
+  background-position: bottom;
+}
+
+.colorpicker_submit.colorpicker_focus {
+  background-position: bottom;
+}
+
+.colorpicker_slider {
+  background-position: bottom;
+}
